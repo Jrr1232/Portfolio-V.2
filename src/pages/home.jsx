@@ -1,10 +1,11 @@
 import React from "react";
+import Scrolltext from "../components/scrolltext";
+
 export default function Home() {
     return (
         <div>
             <main>
-                <h2>Home Page</h2>
-                <p>This is the home page of my React application.</p>
+                <Scrolltext />
             </main>
         </div>
     );
