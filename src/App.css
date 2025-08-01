@@ -1,9 +1,5 @@
 /* Styling for the navbar */
-#root {}
 
-.navbar {
-  color: rgb(117, 198, 171)
-}
 
 .navbar-brand {
   display: flex;
@@ -11,16 +7,36 @@
 
 #logo1 {
   margin-right: 20px;
+  margin-left: 10px;
   text-align: center;
   background-color: yellow;
   border: 1px solid rgb(0, 0, 0);
   width: 50px;
 }
 
-canvas {
+/* Styling for the Scrollbar */
+.scroll-container {
   width: 100%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
 }
 
+.scroll-text {
+  font-family: 'Bitcount Prop Single', monospace;
+  display: inline-block;
+  word-spacing: 100px;
+  padding-left: 100%;
+  animation: scroll-left 20s linear infinite;
+  font-weight: 600;
+  font-size: 35px;
+
+}
+
+/* Styling for the Projects */
 .projects-container {
   display: flex;
   width: 100%;
@@ -46,29 +62,6 @@ canvas {
 
 }
 
-.scroll-container {
-  width: 100%;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  overflow: hidden;
-  white-space: nowrap;
-  box-sizing: border-box;
-  border: 1px solid #ddd;
-
-  /* just to visualize */
-}
-
-.scroll-text {
-  font-family: 'Bitcount Prop Single', monospace;
-  display: inline-block;
-  word-spacing: 100px;
-  padding-left: 100%;
-  animation: scroll-left 20s linear infinite;
-  font-weight: 600;
-  font-size: 35px;
-
-}
-
 .projects-list {
   height: 30%;
   overflow-y: auto;
@@ -79,7 +72,68 @@ canvas {
   /* Internet Explorer 10+ */
 }
 
+/* Styling for the Animation Box */
+canvas {
+  width: 100%;
+  padding-right: 100px;
+}
 
+/* Styling for the Resume*/
+#resume-title {
+  color: rgba(6, 192, 205, 0.658);
+  margin-bottom: 10px;
+  font-size: xx-large;
+
+}
+
+#resume-link {
+  padding-top: 100px;
+  list-style: none;
+  font-size: small;
+  margin-bottom: 50px;
+}
+
+#skills {
+  font-size: xx-large;
+  ;
+}
+
+#skills2 {
+  font-size: xx-large;
+}
+
+#skills li {
+  margin-top: 20px;
+  list-style: none;
+  font-size: large;
+  color: rgba(6, 192, 205, 0.658);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+
+}
+
+#skills ul :hover .list-item {
+  transform: scale(2.2);
+  transition: transform 0.3s ease;
+
+
+}
+
+#skills2 ul :hover .list-item {
+  transform: scale(2.2);
+  transition: transform 0.3s ease;
+
+
+}
+
+#skills2 li {
+  list-style: none;
+  margin-top: 20px;
+  font-size: large;
+  margin-bottom: 20px;
+  color: rgba(255, 68, 0, 0.744);
+
+}
 
 @keyframes scroll-left {
   0% {

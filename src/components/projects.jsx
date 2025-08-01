@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import weatherAppImage from '../assets/Screenshot 2025-07-31 202842.png'; // Import the image
 import Whispr from '../assets/whispr_demo.png'; // Import the image
 import SalonFlow from '../assets/cesar-saravia-uM6IhU0UZg0-unsplash.jpg'; // Import the image
-import Javascript from '../assets/JavaScript-logo.png'; // Import the image
 import Portfolio from '../assets/Screenshot 2025-07-31 204347.png'; // Import the image
 import PasswordManager from '../assets/ChatGPT Image Jul 31, 2025, 08_09_24 PM.png'; // Import the image
 

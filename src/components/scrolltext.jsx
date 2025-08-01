@@ -1,14 +1,13 @@
-
-
-export default function Scrolltext() {
+export default function Scrolltext(props) {
+    // Use props.text or fallback to a default message
+    const text = props.text || "Scrolling Text";
 
     return (
         <div className="scroll-container">
             <div className="scroll-text">
-                PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS&nbsp;&nbsp;&nbsp;{/* spacing */}
-                PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS&nbsp;&nbsp;&nbsp;
+                {text} {text} {text} {text} {text}&nbsp;&nbsp;&nbsp;{/* spacing */}
+                {text} {text} {text} {text} {text}&nbsp;&nbsp;&nbsp;
             </div>
         </div>
     );
 }
-

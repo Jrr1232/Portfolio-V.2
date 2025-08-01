@@ -1,14 +1,19 @@
 import Header from "../components/header";
-import Home from "./home";
-import Animate from "../components/js-logo";
-
+import Projects from "../components/projects";
+import Resume from "../components/resume";
+import Scrolltext from "../components/scrolltext";
+import Animation from "../components/animation";
 export default function Layout() {
     return (
         <div>
             <main>
                 <Header />
-                <Home />
-                <Animate />
+                <Scrolltext text="Projects" />
+                <Projects />
+                <Animation />
+                <Scrolltext text="Resume" />
+                <Resume />
+
             </main>
         </div>
     );
