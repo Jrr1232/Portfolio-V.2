@@ -11,24 +11,27 @@ export default function Header() {
         const date = new Date();
         const hours = date.getHours();
         const minutes = String(date.getMinutes()).padStart(2, "0");
-        return `${hours}:${minutes}`;
+        const seconds = String(date.getSeconds()).padStart(2, "0");
+        const milliseconds = String(Date.now()).padStart(3, "0"); // Get milliseconds and format to 3 digits
+
+        return `${hours}:${minutes}:${seconds}:${milliseconds}`;
     }
 
     useEffect(() => {
         const interval = setInterval(() => {
             setTime(getCurrentTime());
-        }, 1000); // Update every second
+        }, 100); // Update every second
 
         return () => clearInterval(interval); // Clean up on unmount
     }, []);
 
 
     return (
-        <nav className="navbar bg-body-tertiary">
+        <nav className="navbar bg-body-tertiary" id="navbar">
             <div className="container-fluid ">
                 <a className="navbar-brand" href="#">
                     <div id="logo1">JF</div>
-                    {time}
+                    <span style={{ fontSize: "15px", fontWeight: "bold" }}>{time}</span>
                 </a>
                 <div className="d-flex justify-content-end align-items-center gap-2">
                     <img

@@ -1,12 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import React from 'react'
 import './index.css'
 import App from './App.jsx'
-import Home from './pages/home.jsx'
 import Layout from './pages/layout.jsx';
 
 function Error() {
