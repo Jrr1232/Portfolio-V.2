@@ -27,6 +27,7 @@ export default function Header() {
         <nav className="navbar bg-body-tertiary">
             <div className="container-fluid ">
                 <a className="navbar-brand" href="#">
+                    <div id="logo1">JF</div>
                     {time}
                 </a>
                 <div className="d-flex justify-content-end align-items-center gap-2">

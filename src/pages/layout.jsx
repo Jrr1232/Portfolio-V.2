@@ -9,9 +9,6 @@ export default function Layout() {
                 <Header />
                 <Home />
                 <Animate />
-
-
-
             </main>
         </div>
     );
