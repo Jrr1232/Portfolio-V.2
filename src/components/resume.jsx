@@ -6,7 +6,7 @@ export default function Resume() {
     return (
         <>
             <Typography variant="h4" align="center" id="resume-link">
-                Download my <a href="https://docs.google.com/document/d/1jtlML9hnRNmqrA5K8FJgn1nPRxRYWQbkVuw1ZB1MZiI/edit?usp=sharing">resume</a>      </Typography>
+                Download my <a href="https://docs.google.com/document/d/1lmh6kt9L11SEohUry49Czz9uBOuvGOESP3BixFTlWNE/edit?usp=sharing">resume</a>      </Typography>
             <Typography variant="h2" align="center" id="skills">
                 Front-end Proficiencies
                 <ul>

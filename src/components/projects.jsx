@@ -1,5 +1,5 @@
 import { useState } from "react";
-import weatherAppImage from '../assets/Screenshot 2025-07-31 202842.png'; // Import the image
+import weatherAppImage from '../assets/WX.png'; // Import the image
 import Whispr from '../assets/whispr_demo.png'; // Import the image
 import SalonFlow from '../assets/cesar-saravia-uM6IhU0UZg0-unsplash.jpg'; // Import the image
 import Portfolio from '../assets/Screenshot 2025-07-31 204347.png'; // Import the image
@@ -16,7 +16,8 @@ export default function Projects() {
     // Handle mouse hover state and set background image dynamically
     const handleMouseOver = (imageUrl) => {
         setHovered(true);
-        setBackgroundImage(imageUrl); // Set the background image when hovered
+        setBackgroundImage(imageUrl);
+        // Set the background image when hovered
     };
 
     const handleMouseLeave = () => {
@@ -42,20 +43,24 @@ export default function Projects() {
                 backgroundImage: backgroundImage ? `url(${backgroundImage})` : "", // Dynamic background image
             }}
         >
+            <div id="scroll-down">Scroll down</div>
+            
             <ul className="projects-list">
                 <li
                     onMouseOver={(e) => {
                         handleMouseOver(SalonFlow);
                         handleZoom(e);
-                        e.target.style.color = 'white'; // Change font color on hover
+                        e.currentTarget.querySelector('a').style.color = 'white';
                     }}
                     onMouseLeave={(e) => {
                         handleMouseLeave();
                         handleZoomOut(e);
-                        e.target.style.color = 'black';
+                        e.currentTarget.querySelector('a').style.color = 'black';
                     }}
                 >
-                    SalonFlow
+                    <a href="https://johannysunisex-cdc945aa3db4.herokuapp.com/">
+                        SalonFlow
+                    </a>
                 </li>
                 <li
                     onMouseOver={(e) => {
@@ -66,8 +71,8 @@ export default function Projects() {
                         handleMouseLeave();
                         handleZoomOut(e);
                     }}
-                >
-                    Password Generator
+                ><a href="https://jrr1232.github.io/unique-Passwords/">
+                        Password Generator</a>
                 </li>
                 <li
                     onMouseOver={(e) => {
@@ -78,8 +83,8 @@ export default function Projects() {
                         handleMouseLeave();
                         handleZoomOut(e);
                     }}
-                >
-                    Whispr
+                ><a href="https://whispr-cf4e46930867.herokuapp.com/">
+                        Whispr</a>
                 </li>
                 <li
                     onMouseOver={(e) => {
@@ -91,8 +96,8 @@ export default function Projects() {
                         handleMouseLeave();
                         handleZoomOut(e);
                     }}
-                >
-                    Weather API
+                ><a href="https://jrr1232.github.io/weatherApp/">
+                        WX Weather API</a>
                 </li>
                 <li
                     onMouseOver={(e) => {
@@ -103,8 +108,9 @@ export default function Projects() {
                         handleMouseLeave();
                         handleZoomOut(e);
                     }}
-                >
-                    Portfolio V.1
+                ><a href="https://eclectic-cucurucho-42d8d5.netlify.app/Portfolio">
+                        Portfolio V.1
+                    </a>
                 </li>
             </ul>
         </div>

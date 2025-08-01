@@ -27,7 +27,7 @@ export default function Header() {
 
 
     return (
-        <nav className="navbar bg-body-tertiary" id="navbar">
+        <nav className="navbar navbar-expand-md  bg-body-tertiary" id="navbar">
             <div className="container-fluid ">
                 <a className="navbar-brand" href="#">
                     <div id="logo1">JF</div>

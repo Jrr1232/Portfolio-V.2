@@ -70,6 +70,7 @@ export default function Animation() {
 
     return (
         <div
+            id = "animation-container"
             ref={containerRef}
             style={{ width: '100vw', height: '40vh' }}
         />
