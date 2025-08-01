@@ -17,7 +17,7 @@
 /* Styling for the Scrollbar */
 .scroll-container {
   width: 100%;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
   overflow: hidden;
   white-space: nowrap;
@@ -29,7 +29,6 @@
   font-family: 'Bitcount Prop Single', monospace;
   display: inline-block;
   word-spacing: 100px;
-  padding-left: 100%;
   animation: scroll-left 20s linear infinite;
   font-weight: 600;
   font-size: 35px;
@@ -143,4 +142,14 @@ canvas {
   100% {
     transform: translateX(-50%);
   }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
