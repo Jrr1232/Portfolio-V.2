@@ -1,6 +1,6 @@
 #social-media {
   display: flex;
-  margin-left: 25%;
+  margin-left: 20%;
   margin-top: 8%;
   margin-bottom: 8%;
 
@@ -321,9 +321,7 @@ canvas {
 
 }
 
-#animation-container {
-  
-}
+#animation-container {}
 
 @keyframes scroll-left {
   0% {
