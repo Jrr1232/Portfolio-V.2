@@ -1,12 +1,21 @@
 import express from 'express';
+import path from 'path'
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 const app = express();
 const port = process.env.PORT || 3001;
 
-app.get('/', (req, res) => {
-    res.send('Hello World');
-});
+app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-app.listen(port, () => {
-    console.log(`Server listening on port ${port}`);
-});
+try {
+    app.listen(port, () => {
+        console.log(`Server listening on port ${port}`);
+    });
+} catch (err) {
+    console.error("Error starting server:", err);
+}
