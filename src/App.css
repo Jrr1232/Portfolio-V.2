@@ -367,6 +367,11 @@ canvas {
     background-size: cover;
   }
 
+  #skills li {
+
+    margin-bottom: 10%;
+  }
+
   #skills {
     margin-right: 10%;
   }
