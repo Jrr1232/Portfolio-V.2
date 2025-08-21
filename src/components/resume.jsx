@@ -10,25 +10,25 @@ export default function Resume() {
             <Typography variant="h2" align="center" id="skills">
                 Front-end Proficiencies
                 <ul>
-                    <li><div class="list-item">HTML</div></li>
-                    <li><div class="list-item">CSS</div></li>
-                    <li><div class="list-item">JavaScript</div></li>
-                    <li><div class="list-item">JQuery</div></li>
-                    <li><div class="list-item">responsive design</div></li>
-                    <li><div class="list-item">React</div></li>
-                    <li><div class="list-item">Bootstrap</div></li>
+                    <li><div className="list-item">HTML</div></li>
+                    <li><div className="list-item">CSS</div></li>
+                    <li><div className="list-item">JavaScript</div></li>
+                    <li><div className="list-item">JQuery</div></li>
+                    <li><div className="list-item">responsive design</div></li>
+                    <li><div className="list-item">React</div></li>
+                    <li><div className="list-item">Bootstrap</div></li>
                 </ul>
             </Typography>
             <Typography variant="h2" align="center" id='skills2'>
                 Back-end Proficiencies
                 <ul>
-                    <li><div class="list-item">API's</div></li>
-                    <li><div class="list-item">Node</div></li>
-                    <li><div class="list-item">Express</div></li>
-                    <li><div class="list-item">MySQL,Sequelize</div></li>
-                    <li><div class="list-item">MongoDB,Mongoose</div></li>
-                    <li><div class="list-item">REST</div></li>
-                    <li><div class="list-item">GraphQL</div></li>
+                    <li><div className="list-item">API's</div></li>
+                    <li><div className="list-item">Node</div></li>
+                    <li><div className="list-item">Express</div></li>
+                    <li><div className="list-item">MySQL,Sequelize</div></li>
+                    <li><div className="list-item">MongoDB,Mongoose</div></li>
+                    <li><div className="list-item">REST</div></li>
+                    <li><div className="list-item">GraphQL</div></li>
                 </ul>
             </Typography>
 

@@ -1,6 +1,6 @@
 #social-media {
   display: flex;
-  margin-left: 20%;
+  margin-left: 25%;
   margin-top: 8%;
   margin-bottom: 8%;
 
@@ -321,7 +321,11 @@ canvas {
 
 }
 
-#animation-container {}
+#animation-container {
+  width: '100vw';
+  height: '40vh';
+
+}
 
 @keyframes scroll-left {
   0% {
@@ -349,8 +353,7 @@ canvas {
   }
 
   #animation-container {
-    height: 80vh;
-    width: 80vh;
+    margin-right: 3%;
   }
 
   #social-media {
@@ -367,10 +370,7 @@ canvas {
     background-size: cover;
   }
 
-  #skills li {
-
-    margin-bottom: 10%;
-  }
+  #skills li {}
 
   #skills {
     margin-right: 10%;
@@ -378,6 +378,7 @@ canvas {
 
   #skills2 {
     margin-right: 10%;
+    margin-bottom: 30%;
   }
 
   #resume-link {
