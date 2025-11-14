@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  
  
 ![Static Badge](https://img.shields.io/badge/license--yellow)
@@ -89,3 +90,8 @@ Please reach me at my Github, or email for further questions 🐶.
 
 
 
+=======
+﻿# Portfolio-V.2
+
+
+>>>>>>> d11778d41263eed986b47dc5d4797ac8d782c618
